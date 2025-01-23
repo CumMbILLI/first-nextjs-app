@@ -5,7 +5,7 @@ import { lusitana } from "@/app/ui/fonts";
 import { Suspense } from "react";
 import CardWrapper from "@/app/ui/dashboard/cards";
 
-//Тест
+//Тест 2
 
 import {
   CardsSkeleton,
