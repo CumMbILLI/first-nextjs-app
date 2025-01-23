@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/user/Desktop/nextjs-dashboard/app/dashboard/invoices/page.tsx"],"sourcesContent":["export default function Page() {\n  return <p>Invoices Page</p>;\n}\n"],"names":[],"mappings":";;;;;AAAe,SAAS;IACtB,qBAAO,6XAAC;kBAAE;;;;;;AACZ"}},
+    {"offset": {"line": 21, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 32, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 32, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
