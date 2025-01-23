@@ -3,5 +3,7 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/dashboard/page": "app/dashboard/page.js",
   "/dashboard/customers/page": "app/dashboard/customers/page.js",
-  "/dashboard/invoices/page": "app/dashboard/invoices/page.js"
+  "/dashboard/invoices/page": "app/dashboard/invoices/page.js",
+  "/seed/route": "app/seed/route.js",
+  "/query/route": "app/query/route.js"
 }

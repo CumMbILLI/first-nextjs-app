@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/user/Desktop/nextjs-dashboard/app/dashboard/loading.tsx"],"sourcesContent":["import { inter } from \"../ui/fonts\";\n\nexport default function Loading() {\n  return (\n    <p className={`${inter.className} text-center text-xl`}>\n      <b>Loading...</b>\n    </p>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;AAAA;;;AAEe,SAAS;IACtB,qBACE,6WAAC;QAAE,WAAW,GAAG,6KAAA,CAAA,QAAK,CAAC,SAAS,CAAC,oBAAoB,CAAC;kBACpD,cAAA,6WAAC;sBAAE;;;;;;;;;;;AAGT"}},
+    {"offset": {"line": 31, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

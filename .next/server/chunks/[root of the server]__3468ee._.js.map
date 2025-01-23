@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 151, "column": 0}, "map": {"version":3,"sources":["file:///Users/user/Desktop/nextjs-dashboard/app/query/route.ts"],"sourcesContent":["import { db } from \"@vercel/postgres\";\n\nconst client = await db.connect();\n\nasync function listInvoices() {\n  const data = await client.sql`\n    SELECT invoices.amount, customers.name\n    FROM invoices\n    JOIN customers ON invoices.customer_id = customers.id\n    WHERE invoices.amount = 666;\n  `;\n\n  return data.rows;\n}\n\nexport async function GET() {\n  try {\n    return Response.json(await listInvoices());\n  } catch (error) {\n    return Response.json({ error }, { status: 500 });\n  }\n}\n"],"names":[],"mappings":";;;AAAA;AAAA;;AAEA,MAAM,SAAS,MAAM,yRAAA,CAAA,KAAE,CAAC,OAAO;AAE/B,eAAe;IACb,MAAM,OAAO,MAAM,OAAO,GAAG,CAAC;;;;;EAK9B,CAAC;IAED,OAAO,KAAK,IAAI;AAClB;AAEO,eAAe;IACpB,IAAI;QACF,OAAO,SAAS,IAAI,CAAC,MAAM;IAC7B,EAAE,OAAO,OAAO;QACd,OAAO,SAAS,IAAI,CAAC;YAAE;QAAM,GAAG;YAAE,QAAQ;QAAI;IAChD;AACF"}},
+    {"offset": {"line": 178, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
