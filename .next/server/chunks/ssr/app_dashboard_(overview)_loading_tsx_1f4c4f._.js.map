@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/user/Desktop/nextjs-dashboard/app/dashboard/%28overview%29/loading.tsx"],"sourcesContent":["import { inter } from \"../ui/fonts\";\nimport DashboardSkeleton from \"../ui/skeletons\";\n\nexport default function Loading() {\n  return <DashboardSkeleton />;\n}\n"],"names":[],"mappings":";;;;;;;;;;;AAGe,SAAS;IACtB,qBAAO,6WAAC;;;;;AACV"}},
+    {"offset": {"line": 25, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
