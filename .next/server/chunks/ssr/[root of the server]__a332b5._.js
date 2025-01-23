@@ -562,10 +562,10 @@ async function fetchRevenue() {
     try {
         // Artificially delay a response for demo purposes.
         // Don't do this in production :)
-        // console.log('Fetching revenue data...');
-        // await new Promise((resolve) => setTimeout(resolve, 3000));
+        console.log("Fetching revenue data...");
+        await new Promise((resolve)=>setTimeout(resolve, 3000));
         const data = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$vercel$2b$postgres$40$0$2e$10$2e$0_utf$2d$8$2d$validate$40$6$2e$0$2e$5$2f$node_modules$2f40$vercel$2f$postgres$2f$dist$2f$chunk$2d$7IR77QAQ$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__["sql"]`SELECT * FROM revenue`;
-        // console.log('Data fetch completed after 3 seconds.');
+        console.log("Data fetch completed after 3 seconds.");
         return data.rows;
     } catch (error) {
         console.error("Database Error:", error);
