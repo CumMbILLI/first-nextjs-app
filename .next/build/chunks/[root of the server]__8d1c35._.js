@@ -136,14 +136,14 @@ const init = async (ipc)=>{
     });
     processor = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$postcss$40$8$2e$5$2e$1$2f$node_modules$2f$postcss$2f$lib$2f$postcss$2e$mjs__$5b$postcss$5d$__$28$ecmascript$29$__["default"])(loadedPlugins);
 };
-async function transform(ipc, cssContent, name, sourceMap) {
+async function transform(ipc, cssContent, name) {
     const { css, map, messages } = await processor.process(cssContent, {
         from: name,
         to: name,
-        map: sourceMap ? {
+        map: {
             inline: false,
             annotation: false
-        } : undefined
+        }
     });
     const assets = [];
     for (const msg of messages){
@@ -152,7 +152,7 @@ async function transform(ipc, cssContent, name, sourceMap) {
                 assets.push({
                     file: msg.file,
                     content: msg.content,
-                    sourceMap: !sourceMap ? undefined : typeof msg.sourceMap === "string" ? msg.sourceMap : JSON.stringify(msg.sourceMap)
+                    sourceMap: typeof msg.sourceMap === "string" ? msg.sourceMap : JSON.stringify(msg.sourceMap)
                 });
                 break;
             case "dependency":
@@ -188,7 +188,7 @@ async function transform(ipc, cssContent, name, sourceMap) {
     }
     return {
         css,
-        map: sourceMap ? JSON.stringify(map) : undefined,
+        map: JSON.stringify(map),
         assets
     };
 }
