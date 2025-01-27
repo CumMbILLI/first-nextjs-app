@@ -4,7 +4,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Link from "next/link";
 import { generatePagination } from "@/app/lib/utils";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 export default function Pagination({ totalPages }: { totalPages: number }) {
   // NOTE: Uncomment this code in Chapter 11
@@ -12,7 +12,6 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
   const paginationQueryParams = useSearchParams();
   const currentPage = Number(paginationQueryParams.get("page")) || 1;
   const pathname = usePathname();
-  const { replace } = useRouter();
 
   const createPageURL = (nuberPage: number | string) => {
     const params = new URLSearchParams(paginationQueryParams);
